@@ -1,0 +1,68 @@
+@mixin ellipsis() {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin hidePlaceholder() {
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+}
+
+$SupportsGridValue: grid; // change to any invalid display value to simulate browser without grid support
+
+/**
+ * Adds color as default color and css variable
+ * @param {param} CSS parameter, e.g. color or background-color
+ * @param {variables} Color variable map
+ * @param {opacity} (optional) Opacity of color
+ */
+@mixin cssVariable($param, $variables, $opacity: 1) {
+  @each $variable, $value in $variables {
+    @if $opacity < 1 and $opacity > 0 {
+      @if $variable != 'variable' {
+        #{$param}: rgba($value, $opacity);
+      }
+    } @else {
+      @if $variable != 'variableOpacity' {
+        #{$param}: $value;
+      }
+    }
+  }
+}
+
+/**
+ * Returns a color as string or css variable
+ */
+@function getColor($variables, $key) {
+  @if map-has-key($variables, $key) {
+    @return map-get($variables, $key);
+  }
+
+  @warn "Only 'color', 'variable' and 'variableOpacity' are valid keys.";
+  @return null;
+}
+
+/**
+ * Mixin for border styles with css variables including backup for IE11
+ * @param {width} Width of border
+ * @param {style} Styling of border (e.g. solid)
+ * @param {variables} Color variable map
+ * @param {side} (optional) Side of border (left, right, top, bottom)
+ */
+@mixin borderWithVar($width, $style, $variables, $side: '') {
+  @if $side == '' {
+    @each $variable, $value in $variables {
+      @if $variable != 'variableOpacity' {
+        border: $width $style $value;
+      }
+    }
+  } @else {
+    @each $variable, $value in $variables {
+      @if $variable != 'variableOpacity' {
+        border-#{$side}: $width $style $value;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import '../../shared/library/variables';
+@import '../../shared/library/variables_new';
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $NavigationHeight;
+  padding: 0 $SizeRegular;
+  background-color: $PrimaryColor-C;
+  box-shadow: $BoxShadow3;
+  z-index: $ZIndexNavigation;
+  user-select: none;
+  color: $FontColorInverted;
+  font-weight: $FontWeightBold;
+
+  &__logo {
+    width: $SizeVeryLarge;
+    height: $SizeVeryLarge;
+    margin-right: $SizeRegular;
+  }
+
+  &__title {
+    flex: 1;
+  }
+
+  &__user-role {
+    font-size: $FontSizeSmall;
+    color: $FontColor1;
+  }
+
+  &__user-name {
+    font-size: $FontSizeSmall;
+    font-weight: $FontWeightBold;
+  }
+
+  &__user-email {
+    font-size: $FontSizeSmall;
+  }
+
+  &__logout {
+    font-size: $FontSizeSmall;
+  }
+
+  ::ng-deep app-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  ::ng-deep app-menu.is-open {
+    background-color: $PrimaryColorLight-C;
+  }
+
+  ::ng-deep app-menu div.gc-textfield__content label.gc-textfield__dropdown-label,
+  ::ng-deep app-menu div.gc-textfield__content .gc-icon__dropdown-arrow-down-Fill,
+  ::ng-deep app-menu div.gc-textfield.is-menu-dropdown.menu-activated label.gc-textfield__dropdown-label {
+    color: $FontColorInverted !important;
+  }
+
+  ::ng-deep app-menu div.gc-menu__dropdown {
+    margin-top: 14px;
+    border-radius: 0;
+    box-shadow: $BoxShadow2;
+  }
+}

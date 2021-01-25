@@ -1,0 +1,68 @@
+@import './../variables';
+
+.amcharts-balloon-div {
+  position: relative;
+  padding: $SizeRegular;
+  padding-bottom: $SizeSmall;
+  box-shadow: $BoxShadow2;
+  background-color: $ContentBackgroundColor;
+  margin-left: 2px;
+}
+
+.gc-topseller__balloon {
+  &-container {
+    font-family: $FontFamilyDefaultCondensed;
+  }
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $SizeSmall;
+    padding-bottom: $SizeTiny;
+    border-bottom: 1px solid $DisabledBorderColor;
+  }
+
+  &-rank {
+    display: inline-block;
+    width: $SizeMedium;
+    height: $SizeMedium;
+    border-radius: 50%;
+    line-height: $SizeMedium * 1.1;
+    text-align: center;
+    color: $FontColorInverted;
+    margin-right: $SizeSmall;
+  }
+
+  &-title {
+    font-size: $FontSizeRegular;
+    white-space: nowrap;
+    max-width: 200px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &-table {
+    width: 100%;
+    font-size: $FontSizeSmall;
+    line-height: 15px;
+
+    tr:not(:last-child) {
+      td {
+        padding-bottom: $SizeSmall;
+      }
+    }
+    td {
+      white-space: nowrap;
+
+      &:first-child {
+        text-align: left;
+      }
+
+      &:last-child {
+        padding-left: $SizeRegular;
+        text-align: right;
+      }
+    }
+  }
+}

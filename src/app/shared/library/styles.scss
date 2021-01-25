@@ -1,0 +1,235 @@
+@import 'fontfamily';
+@import 'css-variables';
+@import 'variables';
+@import 'styles/reset.min';
+@import 'styles/salesChart';
+@import 'styles/topsellerChart';
+@import 'styles/savingStatus';
+@import './variables_new.scss';
+@import 'app/theme/theme';
+
+// Default style needed for overlays
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+$font-path: 'assets/icons/fonts' !default;
+
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $FontFamilyDefault;
+  height: 100%;
+  background-color: $BackgroundColor;
+}
+
+.gc-page {
+  position: relative;
+  //min-height: calc(100% + #{$NavigationHeight} + #{$SizeMedium});
+}
+
+// Remove autofill styles
+input:-webkit-autofill {
+  -webkit-text-fill-color: $FontColorStandard !important;
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+input:-moz-autofill {
+  -moz-text-fill-color: $FontColorStandard !important;
+  -moz-box-shadow: 0 0 0 30px white inset;
+}
+input:-o-autofill {
+  -o-text-fill-color: $FontColorStandard !important;
+  -o-box-shadow: 0 0 0 30px white inset;
+}
+input:-khtml-autofill {
+  -khtml-text-fill-color: $FontColorStandard !important;
+  -khtml-box-shadow: 0 0 0 30px white inset;
+}
+
+input:focus:-webkit-autofill {
+  -webkit-text-fill-color: $FontColorStandard !important;
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+input:focus:-moz-autofill {
+  -moz-text-fill-color: $FontColorStandard !important;
+  -moz-box-shadow: 0 0 0 30px white inset;
+}
+input:focus:-o-autofill {
+  -o-text-fill-color: $FontColorStandard !important;
+  -o-box-shadow: 0 0 0 30px white inset;
+}
+input:focus:-khtml-autofill {
+  -khtml-text-fill-color: $FontColorStandard !important;
+  -khtml-box-shadow: 0 0 0 30px white inset;
+}
+
+// Remove spinner buttons in number inputs
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+// Icon font
+@font-face {
+  font-family: 'GC-icons';
+  src: url('#{$font-path}/GC-icons.eot?agycsn');
+  src: url('#{$font-path}/GC-icons.eot?agycsn#iefix') format('embedded-opentype'),
+    url('#{$font-path}/GC-icons.woff2?agycsn') format('woff2'),
+    url('#{$font-path}/GC-icons.ttf?agycsn') format('truetype'),
+    url('#{$font-path}/GC-icons.woff?agycsn') format('woff'),
+    url('#{$font-path}/GC-icons.svg?agycsn#GC-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.goldenRatioMajorH {
+  width: 100% * $GoldenRatioMajor;
+}
+.goldenRatioMajorV {
+  height: 100% * $GoldenRatioMajor;
+}
+
+.goldenRatioMinorH {
+  width: 100% * $GoldenRatioMinor;
+}
+.goldenRatioMinorV {
+  height: 100% * $GoldenRatioMinor;
+}
+
+.halfH {
+  width: 50%;
+}
+.halfV {
+  height: 50%;
+}
+
+.dnd-drag-start {
+  -moz-transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.7;
+  border: 2px dashed #000000;
+}
+
+.dnd-drag-enter {
+  opacity: 0.7;
+  border: 2px dashed #000000;
+}
+
+.dnd-drag-over {
+  border: 2px dashed #000000;
+}
+
+.dnd-sortable-drag {
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0.7;
+  border: 1px dashed #000000;
+}
+
+.gc-component-loading {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  filter: blur(5px);
+  transition: filter $TimingStandard--EaseIO;
+
+  &--loaded {
+    filter: blur(0px);
+  }
+}
+
+.gc-component-highlight {
+  &--highlighted {
+    animation-name: test;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+    @keyframes test {
+      10% {
+        outline-color: $PrimaryColorLight-C;
+        outline-width: 2px;
+        outline-style: solid;
+      }
+      90% {
+        outline-color: $PrimaryColorLight-C;
+        outline-width: 2px;
+        outline-style: solid;
+      }
+    }
+  }
+}
+
+.app__loading {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $FontFamilyDefault;
+}
+
+.app__loading-text {
+  text-align: center;
+  font-size: $FontSizeLarge;
+  color: $Gray5;
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+span.highlight {
+  border-radius: 2px;
+  background-color: $PrimaryColor3;
+  color: black;
+  padding: 0 2px;
+}
+
+div.gc-menu__multi-select-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: $PrimaryColor6;
+}
+
+div.gc-menu__single-select-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $PrimaryColor6;
+}

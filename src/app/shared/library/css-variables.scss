@@ -1,0 +1,37 @@
+@import 'styles/colors';
+
+// Colors for normal use
+:root {
+  --primaryColor: #{$PrimaryColor-C};
+  --primaryColorLight: #{$PrimaryColorLight-C};
+  --primaryColorExtraLight: #{$PrimaryColorExtraLight-C};
+  --primaryColorHover: #{$PrimaryColorHover-C};
+  --primaryColorLightHover: #{$PrimaryColorLightHover-C};
+  --primaryColorDark: #{$PrimaryColorDark-C};
+  --primaryColorDarkHover: #{$PrimaryColorDarkHover-C};
+  --primaryColorExtraDark: #{$PrimaryColorExtraDark-C};
+  --primaryColorExtraDarkHover: #{$PrimaryColorExtraDarkHover-C};
+
+  --timesliderBackgroundColor: #{$TimesliderBackgroundColor-C};
+  --timesliderTimeframeColor: #{$TimesliderTimeframeColor-C};
+  --timesliderLineColor: #{$TimesliderLineColor-C};
+  --timesliderLineFilledColor: #{$TimesliderLineFilledColor-C};
+}
+
+// Colors used to add alpha
+:root {
+  --primaryColorOpac: #{red($PrimaryColor-C)}, #{green($PrimaryColor-C)}, #{blue($PrimaryColor-C)};
+  --primaryColorLightOpac: #{red($PrimaryColorLight-C)}, #{green($PrimaryColorLight-C)}, #{blue($PrimaryColorLight-C)};
+  --primaryColorExtraLightOpac: #{red($PrimaryColorExtraLight-C)}, #{green($PrimaryColorExtraLight-C)}, #{blue($PrimaryColorExtraLight-C)};
+  --primaryColorHoverOpac: #{red($PrimaryColorHover-C)}, #{green($PrimaryColorHover-C)}, #{blue($PrimaryColorHover-C)};
+  --primaryColorLightHoverOpac: #{red($PrimaryColorLightHover-C)}, #{green($PrimaryColorLightHover-C)}, #{blue($PrimaryColorLightHover-C)};
+  --primaryColorDarkOpac: #{red($PrimaryColorDark-C)}, #{green($PrimaryColorDark-C)}, #{blue($PrimaryColorDark-C)};
+  --primaryColorDarkHoverOpac: #{red($PrimaryColorDarkHover-C)}, #{green($PrimaryColorDarkHover-C)}, #{blue($PrimaryColorDarkHover-C)};
+  --primaryColorExtraDarkOpac: #{red($PrimaryColorExtraDark-C)}, #{green($PrimaryColorExtraDark-C)}, #{blue($PrimaryColorExtraDark-C)};
+  --primaryColorExtraDarkHoverOpac: #{red($PrimaryColorExtraDarkHover-C)}, #{green($PrimaryColorExtraDarkHover-C)}, #{blue($PrimaryColorExtraDarkHover-C)};
+
+  --timesliderBackgroundColorOpac: #{red($TimesliderBackgroundColor-C)}, #{green($TimesliderBackgroundColor-C)}, #{blue($TimesliderBackgroundColor-C)};
+  --timesliderTimeframeColorOpac: #{red($TimesliderTimeframeColor-C)}, #{green($TimesliderTimeframeColor-C)}, #{blue($TimesliderTimeframeColor-C)};
+  --timesliderLineColorOpac: #{red($TimesliderLineColor-C)}, #{green($TimesliderLineColor-C)}, #{blue($TimesliderLineColor-C)};
+  --timesliderLineFilledColorOpac: #{red($TimesliderLineFilledColor-C)}, #{green($TimesliderLineFilledColor-C)}, #{blue($TimesliderLineFilledColor-C)};
+}

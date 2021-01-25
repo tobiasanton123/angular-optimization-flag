@@ -1,0 +1,227 @@
+@import 'tools';
+
+// TODO Sort out unnecessary colors
+// Gray-Colors
+$Gray1: rgb(240, 240, 240);
+$Gray2: rgb(230, 230, 230);
+$Gray3: rgb(220, 220, 220);
+$Gray4: rgb(210, 210, 210);
+$Gray5: rgb(200, 200, 200);
+$Gray6: rgb(190, 190, 190);
+$Gray7: rgb(180, 180, 180);
+$Gray8: rgb(170, 170, 170);
+$Gray9: rgb(160, 160, 160);
+$Gray10: rgb(150, 150, 150);
+$Gray11: rgb(140, 140, 140);
+$Gray12: rgb(130, 130, 130);
+$Gray13: rgb(120, 120, 120);
+$Gray14: rgb(110, 110, 110);
+$Gray15: rgb(100, 100, 100);
+$Gray16: rgb(90, 90, 90);
+$Gray17: rgb(80, 80, 80);
+$Gray18: rgb(70, 70, 70);
+$Gray19: rgb(60, 60, 60);
+$Gray20: rgb(50, 50, 50);
+$Gray21: rgb(40, 40, 40);
+$Gray22: rgb(30, 30, 30);
+
+$GrayVeryLight: $Gray1; //rgb(240, 240, 240);
+$GrayLight: $Gray3; //rgb(220, 220, 220);
+$GrayMedium: $Gray5; //rgb(200, 200, 200);
+$GrayDark: $Gray7; //rgb(180, 180, 180);
+$GrayVeryDark: $Gray10; //rgb(160, 160, 160);
+
+$GrayDefault: rgb(225, 225, 225);
+
+// Background-Colors
+$BackgroundColor: rgba(245, 245, 245, 1);
+$ContentBackgroundColor: rgb(255, 255, 255);
+
+// Border-Colors
+$BorderColor: $Gray7;
+$BorderColorLight: $Gray3;
+$BorderColorVeryLight: $Gray1;
+
+// Variables for Main-Colors
+$PrimaryColor-C: rgb(0, 85, 100);
+$PrimaryColorLight-C: rgb(0, 125, 150);
+$PrimaryColorExtraLight-C: rgb(230, 240, 240);
+
+$PrimaryColorHover-C: rgb(0, 125, 150);
+$PrimaryColorLightHover-C: rgb(75, 165, 180);
+
+$PrimaryColorDark-C: rgb(0, 45, 50);
+$PrimaryColorDarkHover-C: rgb(0, 85, 100);
+
+$PrimaryColorExtraDark-C: rgb(0, 25, 30);
+$PrimaryColorExtraDarkHover-C: rgb(0, 45, 50);
+// -----------------
+
+$PrimaryColor: (
+  color: $PrimaryColor-C,
+  variable: var(--primaryColor),
+  variableOpacity: var(--primaryColorOpac),
+);
+
+$PrimaryColorLight: (
+  color: $PrimaryColorLight-C,
+  variable: var(--primaryColorLight),
+  variableOpacity: var(--primaryColorLightOpac),
+);
+
+$PrimaryColorExtraLight: (
+  color: $PrimaryColorExtraLight-C,
+  variable: var(--primaryColorExtraLight),
+  variableOpacity: var(--primaryColorExtraLightOpac),
+);
+
+$PrimaryColorHover: (
+  color: $PrimaryColorHover-C,
+  variable: var(--primaryColorHover),
+  variableOpacity: var(--primaryColorHoverOpac),
+);
+
+$PrimaryColorLightHover: (
+  color: $PrimaryColorLightHover-C,
+  variable: var(--primaryColorLightHover),
+  variableOpacity: var(--primaryColorLightHoverOpac),
+);
+
+$PrimaryColorDark: (
+  color: $PrimaryColorDark-C,
+  variable: var(--primaryColorDark),
+  variableOpacity: var(--primaryColorDarkOpac),
+);
+
+$PrimaryColorDarkHover: (
+  color: $PrimaryColorDarkHover-C,
+  variable: var(--primaryColorDarkHover),
+  variableOpacity: var(--primaryColorDarkHoverOpac),
+);
+
+$PrimaryColorExtraDark: (
+  color: $PrimaryColorExtraDark-C,
+  variable: var(--primaryColorExtraDark),
+  variableOpacity: var(--primaryColorExtraDarkOpac),
+);
+
+$PrimaryColorExtraDarkHover: (
+  color: $PrimaryColorExtraDarkHover-C,
+  variable: var(--primaryColorExtraDarkHover),
+  variableOpacity: var(--primaryColorExtraDarkHoverOpac),
+);
+
+$DisabledColor: $GrayDefault;
+$DisabledBorderColor: $GrayDefault;
+
+// Familygroup colors
+$FoodColor: rgb(35, 50, 75);
+$BeveragesColor: rgb(15, 145, 170);
+$MiscellaneousColor: rgb(155, 205, 225);
+
+// Signal-Colors
+$SignalColorError: rgb(225, 35, 0);
+$SignalColorErrorHover: rgb(250, 140, 120);
+$SignalColorWarning: rgb(240, 145, 0);
+$SignalColorSuccess: rgb(140, 185, 0);
+$SignalColorInfo: $PrimaryColor-C;
+
+// Font-Colors
+$FontColor1: rgb(185, 190, 198);
+$FontColor2: rgb(130, 138, 150);
+$FontColor3: rgb(85, 97, 112);
+$FontColor4: rgb(45, 58, 76);
+
+$FontColorStandard: rgb(60, 60, 60);
+$FontColorLight: rgb(90, 90, 90);
+$FontColorVeryLight: rgb(155, 155, 155);
+$FontColorDisabled: $GrayDefault;
+
+$FontColorInverted: rgb(255, 255, 255);
+$FontColorLogo: rgb(210, 210, 210);
+$FontColorLogoSecondary: rgb(240, 240, 240);
+$FontColorPublicTitle: rgb(10, 57, 84);
+
+// Overlay-Color
+$OverlayColor: rgba(22, 29, 38, 0.5);
+
+// Module-Colors
+$ModuleTitleBarColor: $Gray2;
+$ModuleDisabledColor: $Gray7;
+$ModuleDisabledColorLight: $Gray2;
+
+// Weather-Colors
+$RainColor: rgb(0, 80, 150);
+
+// Holiday Colors
+$NationalHolidayColor: rgb(115, 10, 60);
+$LocalHolidayColor: rgb(5, 115, 70);
+
+// Button Colors
+$ButtonColorRed: rgb(255, 82, 82);
+$ButtonColorRedDark: darken($ButtonColorRed, 10%);
+
+// Shadows
+$ModuleDetailShadow: 0 1.5px 5px rgba(0, 0, 0, 0.6);
+
+$BoxShadow1: 0.64px 0.64px 1.28px rgba(0, 0, 0, 0.3);
+$BoxShadow2: 0 1.5px 1.5px rgba(0, 0, 0, 0.4);
+$BoxShadow3: 0 2px 2px rgba(0, 0, 0, 0.3);
+$CardShadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+$NavigationShadow: 0 0 10px rgba(0, 0, 0, 0.7);
+$InnerBoxShadow1: inset 0px 1px 3px 0 rgba(0, 0, 0, 0.5);
+
+$PanelShadow: 0 10px 75px rgba(0, 0, 0, 0.4);
+
+$ButtonShadowPrimary: 0 1px 2px 1px rgba(0, 0, 0, 0.25);
+$ButtonShadowSecondary: 0 2px 2px 0 rgba(0, 0, 0, 0.25), 0 -1px 2px rgba(0, 0, 0, 0.075);
+
+// POS system colors
+$PosGastrofixColor: #fca115;
+$PosOrderbirdColor: #00a3e0;
+
+// Timeslider colors
+$TimesliderBackgroundColor-C: rgb(17, 61, 70);
+$TimesliderTimeframeColor-C: rgb(51, 134, 147);
+$TimesliderTimeframeActiveColor-C: $FontColorInverted;
+$TimesliderLineColor-C: rgb(30, 95, 105);
+$TimesliderLineFilledColor-C: rgb(50, 135, 145);
+
+$TimesliderBackgroundColor: (
+  color: $TimesliderBackgroundColor-C,
+  variable: var(--timesliderBackgroundColor),
+);
+
+$TimesliderTimeframeColor: (
+  color: $TimesliderTimeframeColor-C,
+  variable: var(--timesliderTimeframeColor),
+);
+
+$TimesliderLineColor: (
+  color: $TimesliderLineColor-C,
+  variable: var(--timesliderLineColor),
+);
+
+$TimesliderLineFilledColor: (
+  color: $TimesliderLineFilledColor-C,
+  variable: var(--timesliderLineFilledColor),
+);
+
+// Hover-Effects
+@mixin highlightAccent() {
+  @include cssVariable(background-color, $PrimaryColorLight-C);
+  box-shadow: 0 0 5px getColor($PrimaryColor, color) inset;
+  box-shadow: 0 0 5px getColor($PrimaryColor, variable) inset;
+}
+
+@mixin highlightSecondary() {
+  @include cssVariable(background-color, $PrimaryColorLightHover-C);
+  box-shadow: 0 0 5px getColor($PrimaryColorHover, color) inset;
+  box-shadow: 0 0 5px getColor($PrimaryColorHover, variable) inset;
+}
+
+@mixin highlightTertiary() {
+  @include cssVariable(background-color, $PrimaryColorDarkHover-C);
+  box-shadow: 0 0 5px getColor($PrimaryColorDark, color) inset;
+  box-shadow: 0 0 5px getColor($PrimaryColorDark, variable) inset;
+}

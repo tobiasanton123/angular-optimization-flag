@@ -1,0 +1,66 @@
+@import './sizes';
+
+$fromBreakpoint5: 'only screen and (min-width: 1320px)';
+$toBreakpoint5: 'only screen and (max-width: 1319px)';
+
+$fromBreakpoint4: 'only screen and (min-width: 1024px)';
+$toBreakpoint4: 'only screen and (max-width: 1023px)';
+
+$fromBreakpoint3: 'only screen and (min-width: 936px)';
+$toBreakpoint3: 'only screen and (max-width: 935px)';
+
+$fromBreakpoint2: 'only screen and (min-width: 768px)';
+$toBreakpoint2: 'only screen and (max-width: 767px)';
+
+$fromBreakpoint1: 'only screen and (min-width: 650px)';
+$toBreakpoint1: 'only screen and (max-width: 649px)';
+
+$MediaSmartphone: 'only screen and (max-device-width : 479px) and (orientation: portrait), only screen and (max-device-width : 767px) and (orientation: landscape)';
+$MediaSmartphoneLandscape: 'only screen and (min-width : 321px)';
+$MediaSmartphonePortrait: 'only screen and (max-width : 320px)';
+$MediaIpad: 'only screen and (min-device-width : 768px) and (orientation : portrait), only screen and (min-device-width : 1024px) and (orientation : landscape)';
+$MediaIpadLandscape: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)';
+$MediaIpadPortrait: 'only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)';
+$MediaDesktop: 'only screen and (min-width : 1224px)';
+$MediaDesktopLarge: 'only screen and (min-width : 1400px) and (min-height : 1200px)';
+
+$MediaToLargePhone: 'only screen and (max-width : 780px), only screen and (max-width : 767px) and (orientation : landscape)';
+
+$MediaToIpad: 'only screen and (max-device-width : 770px) and (orientation : portrait), only screen and (max-device-width : 1026px) and (orientation : landscape)';
+
+$MediaToIpadPortrait: 'only screen and (max-width : 767px)';
+$MediaFromIpadPortrait: 'only screen and (min-width : 768px)';
+
+$MediaToIpadLandscape: 'only screen and (max-width : 1023px)';
+$MediaFromIpadLandscape: 'only screen and (min-width : 1024px)';
+
+$MediaToDesktop: 'only screen and (max-width : 1024px)';
+$MediaFromDesktop: 'only screen and (min-width : 1200px)';
+
+$MediaDesktopHeight: 'only screen and (min-width : 1024px) and (max-width : 1200px) and (min-height : 900px)';
+
+$MediaNarrowDisplay: 'only screen and (max-width : 900px)';
+
+@mixin OneModuleRow {
+  @media only screen and (max-width: 2 * $ModuleWidth + 4 * $ModuleHorizontalSpace) {
+    @content;
+  }
+}
+
+@mixin TwoModuleRow {
+  @media only screen and (min-width: 2 * $ModuleWidth + 4 * $ModuleHorizontalSpace) and (max-width: 3 * $ModuleWidth + 6 * $ModuleHorizontalSpace) {
+    @content;
+  }
+}
+
+@mixin ThreeModuleRow {
+  @media only screen and (min-width: 3 * $ModuleWidth + 6 * $ModuleHorizontalSpace) and (max-width: 4 * $ModuleWidth + 8 * $ModuleHorizontalSpace) {
+    @content;
+  }
+}
+
+@mixin FourModuleRow {
+  @media only screen and (min-width: 4 * $ModuleWidth + 8 * $ModuleHorizontalSpace) {
+    @content;
+  }
+}

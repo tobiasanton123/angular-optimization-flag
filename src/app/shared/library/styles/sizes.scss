@@ -1,0 +1,77 @@
+// Border-radii
+$BorderRadiusStandard: 2px;
+$BorderRadiusLarge: 4px;
+$BorderRadiusVeryLarge: 10px;
+
+// Header-Sizes
+$NavigationHeight: 3.75rem; // 60px
+
+// NavBar InnerContainer Widths Breakpoints
+$NavInnerContainerWidthBP5: 420px;
+$NavInnerContainerWidthBP4: 420px;
+$NavInnerContainerWidthBP3: 300px;
+$NavInnerContainerWidthBP2: 200px;
+$NavInnerContainerWidthBP1: 100px;
+
+// Footer-Sizes
+$FooterHeight: 4.75rem;
+$FooterHeightMobile: 15rem;
+
+// Sizes
+$SizeTiny: 0.1rem; //  1.6 px
+$SizeSmall: 0.35rem; //  5.6 px
+$SizeRegular: 0.65rem; // 10.4 px
+$SizeMedium: 1rem; // 16   px
+$SizeLarge: 2rem; // 32   px
+$SizeVeryLarge: 3rem; // 48   px
+$SizeExtraLarge: 6rem; // 96   px
+
+// Font-Sizes
+$FontSizeTiny: 0.56rem; // =   9px  =   7 pt
+$FontSizeSmall: 0.75rem; // =  12px  =   9 pt
+$FontSizeRegular: 1rem; // =  16px  =  12 pt
+$FontSizeMedium: 1.25rem; // =  20px  =  15 pt
+$FontSizeLarge: 1.5rem; // =  24px  =  18 pt
+$FontSizeVeryLarge: 2rem; // =  32px  =  24 pt
+
+// Element-Heights
+$Input-Height: 1.75rem; // 28px
+
+$ButtonHeight: 1.875rem;
+
+// Icon-Sizes
+$NavBarIconSize: 1.25rem; // 20px
+
+$IconSizeTiny: 0.56rem; //  9px
+$IconSizeSmall: 0.75rem; // 12px
+$IconSizeRegular: 0.9375rem; // 15px
+$IconSizeMedium: 1.125rem; // 18px
+$IconSizeLarge: 1.5rem; // 24px
+$IconSizeVeryLarge: 2rem; // 32px
+
+$IconSizeModuleMainValue: 1.5625rem; // 25px
+
+$InputIconSize: 1.25rem; // 20px
+$InputIconSizeSmall: 0.9375rem; // 15px
+$ButtonIconSize: 1rem;
+
+// Module-Sizes
+$ModuleHeight: 12.5rem; // 200px
+$ModuleWidth: 18.75rem; // 300px
+$ModuleTitleBarHeight: 2rem;
+$ModuleContentHeight: $ModuleHeight - $ModuleTitleBarHeight;
+$ModuleOptionsListWidth: 12rem;
+$ModuleFilterIconSize: 2rem;
+$ModuleAddButtonSize: 2rem;
+$ModuleBorderWidth: 2px;
+$ModuleDropAreaSize: 10rem;
+$ModuleHorizontalSpace: 0.625rem; // 10px
+$ModuleVerticalSpace: 0.625rem; // 10px
+
+// Page-/Layout-Sizes
+$ModuleContentMaxWidth: 4 * $ModuleWidth + 8 * $ModuleHorizontalSpace;
+$ContentMaxWidth: 1320px;
+
+// Golden ratio
+$GoldenRatioMajor: 0.618;
+$GoldenRatioMinor: 1 - $GoldenRatioMajor;

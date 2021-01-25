@@ -1,0 +1,18 @@
+$StandardEasingFunction: cubic-bezier(0.4, 0, 0.2, 1);
+$DecelerationEasingFunction: cubic-bezier(0, 0, 0.2, 1);
+$AccelerationEasingFunction: cubic-bezier(0.4, 0, 1, 1);
+
+$TimingFast: 0.15s;
+$TimingStandard: 0.25s;
+
+$TimingFast--EaseI: 0.15s ease-in;
+$TimingStandard--EaseI: 0.25s ease-in;
+
+$TimingFast--EaseO: 0.15s ease-out;
+$TimingStandard--EaseO: 0.25s ease-out;
+
+//$TimingFast--EaseIO:     0.15s ease-in-out;
+//$TimingStandard--EaseIO: 0.25s ease-in-out;
+
+$TimingFast--EaseIO: 0.15s $StandardEasingFunction;
+$TimingStandard--EaseIO: 0.25s $StandardEasingFunction;
