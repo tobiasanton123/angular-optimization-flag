@@ -1,5 +1,4 @@
-@import '../../shared/library/variables';
-@import '../../shared/library/variables_new';
+@import "../../shared/library/variables";
 
 .admin-header {
   display: flex;
@@ -55,9 +54,18 @@
     background-color: $PrimaryColorLight-C;
   }
 
-  ::ng-deep app-menu div.gc-textfield__content label.gc-textfield__dropdown-label,
-  ::ng-deep app-menu div.gc-textfield__content .gc-icon__dropdown-arrow-down-Fill,
-  ::ng-deep app-menu div.gc-textfield.is-menu-dropdown.menu-activated label.gc-textfield__dropdown-label {
+  ::ng-deep
+    app-menu
+    div.gc-textfield__content
+    label.gc-textfield__dropdown-label,
+  ::ng-deep
+    app-menu
+    div.gc-textfield__content
+    .gc-icon__dropdown-arrow-down-Fill,
+  ::ng-deep
+    app-menu
+    div.gc-textfield.is-menu-dropdown.menu-activated
+    label.gc-textfield__dropdown-label {
     color: $FontColorInverted !important;
   }
 

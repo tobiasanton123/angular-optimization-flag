@@ -2,8 +2,8 @@
 
 This project is intended to illustrate an assumed erroneous behaviour of the angular build optimization flag. The misbehaviour is that by setting the optimization flag to false, the scss file is much larger, although only variables are imported. 
 
-* Optimization flag true: 2.64 kb
-* Optimization flag false: 36.00 kb
+* Optimization flag true: < 2.00 kb
+* Optimization flag false: 20.00 kb
 
 
 # Reproduce
